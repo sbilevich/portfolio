@@ -1,0 +1,67 @@
+.portfolio {
+    // padding-top: 120px;
+    &__title {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        grid-auto-rows: 280px;
+        gap: 5px;
+        .vertical {
+            grid-row: 1 / 3;
+            grid-column: 4 / 5;
+        }
+        .horisontal {
+            grid-row: 2 / 3;
+            grid-column: 2 / 4;
+            
+        }
+    }
+    &__item {
+        transition: all 0.4s;
+        display:block;
+        img {
+            width: 100%;
+        }
+        .horisontal img{
+            width: auto;
+            height: 100%;
+        }
+        &:hover {
+            transform: scale(1.02);
+            filter: drop-shadow(0px 0px 5px $main-color);
+        }
+    }
+    &__image {
+        &__uber {
+            background: url('../img/works/uber.jpg') no-repeat 100%/cover;
+        }
+        &__pulse {
+            background: url('../img/works/pulse.jpg') no-repeat 100%/cover;
+        }
+        &__food {
+            background: url('../img/works/pepper.jpg') no-repeat 100%/cover;
+        }
+        &__restore {
+            background: url('../img/works/plans.jpg') no-repeat 100%/cover;
+        }
+        &__task {
+            background: url('../img/works/tasker.jpg') no-repeat 100%/cover;
+        }
+        &__stocks {
+            background: url('../img/works/stocks.jpg') no-repeat 100%/cover;
+        }
+    }
+}    
