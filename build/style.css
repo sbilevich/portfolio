@@ -324,7 +324,7 @@ template {
 }
 
 .promo__wrapper {
-  background: url("/img/photo.jpeg") right no-repeat;
+  background: url("img/photo.jpeg") right no-repeat;
   position: relative;
   background-color: #ae4f57;
 }
