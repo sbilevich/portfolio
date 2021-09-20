@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <meta name="title" content="Мое портфолио">
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
 
-    
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="build/style.css">
 </head>
+
 <body>
     <aside class="sidepanel">
         <a href="" class="sidepanel__link"><img src="icons/social/facebook.svg" alt="facebook"></a>
@@ -51,35 +53,45 @@
         </div>
     </div>
     <section class="promo">
-        <div class="hamburger">
-            <span></span>
-            <span class="long"></span>
-            <span></span>
-        </div>
-        <div class="container">
-            <div class="title title_fz20 promo__subtitle">Меня зовут Светлана Билевич</div>
-            <h1 class="title title_fz48 promo__title">Я web-разработчик из Санкт-Петербурга</h1>
-            <div class="promo__btns">
-                <a href="#portfolio" class="promo__link btn">Портфолио</a>
-                <a href="#about" class="promo__link">Про меня</a>
+        <div class="promo__wrapper">
+            <div class="promo__opacity">
+                <div class="hamburger">
+                    <span></span>
+                    <span class="long"></span>
+                    <span></span>
+                </div>
+                <div class="container">
+                    <div class="title title_fz20 promo__subtitle">Меня зовут Светлана Билевич</div>
+                    <h1 class="title title_fz48 promo__title">Я web-разработчик из Санкт-Петербурга</h1>
+                    <div class="promo__btns">
+                        <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                        <a href="#about" class="promo__link">Про меня</a>
+                    </div>
+                </div>
             </div>
+
         </div>
+
+
     </section>
     <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img srcset="img/main_photo_1min.jpg 300w,
-                                  img/main_photo_1.jpg 400w"
-                         sizes="(max-width:576px) 280px,
-                                (min-width: 577px) 400px"         
-                    src="img/main_photo_1.jpg" alt="photo">
+                    <img srcset="img/yellow.jpeg 300w,
+                    img/yellow.jpeg 400w" sizes="(max-width:576px) 280px,
+                                (min-width: 577px) 400px" src="img/yellow.jpeg" alt="photo">
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title">Про меня</h2>
                     <div class="title title_fz36 about__subtitle">Меня зовут Светлана</div>
                     <div class="divider"></div>
-                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
                 </div>
                 <div class="about__skills">
                     <div class="about__skills-item">
@@ -91,7 +103,8 @@
                                 Web-разработка
                             </div>
                             <div class="about__skills-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
                             </div>
                         </div>
                     </div>
@@ -104,7 +117,8 @@
                                 Разработка приложений
                             </div>
                             <div class="about__skills-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
                             </div>
                         </div>
                     </div>
@@ -117,7 +131,8 @@
                                 UI/UX Design
                             </div>
                             <div class="about__skills-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
                             </div>
                         </div>
                     </div>
@@ -145,7 +160,9 @@
                                     <div class="resume__item-place">Диплом инженера | Санкт-Петербург (2005-2011)</div>
                                 </div>
                                 <div class="resume__item-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmo.
                                 </div>
                             </div>
                         </li>
@@ -159,7 +176,9 @@
                                     <div class="resume__item-place">Курсы по Web-разработке</div>
                                 </div>
                                 <div class="resume__item-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmo.
                                 </div>
                             </div>
                         </li>
@@ -178,7 +197,9 @@
                                     <div class="resume__item-place">QA Engineer | Санкт-Петербург (2013-2017)</div>
                                 </div>
                                 <div class="resume__item-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmo.
                                 </div>
                             </div>
                         </li>
@@ -192,7 +213,9 @@
                                     <div class="resume__item-place">Бизнес-Аналитик | Санкт-Петербург (2017-2019)</div>
                                 </div>
                                 <div class="resume__item-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmo.
                                 </div>
                             </div>
                         </li>
@@ -208,41 +231,48 @@
             <div class="devider"></div>
             <div class="instruments">
                 <div class="instruments__item">
-                    <img class = "instruments__img" src="icons/skills/html5.svg" alt="HTML5">
+                    <img class="instruments__img" src="icons/skills/html5.svg" alt="HTML5">
                     <div class="instruments__title">HTML5</div>
                     <div class="instruments__descr">
-                        Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта
+                        Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать
+                        более SEO-оптимизированную структуру вашего продукта
                     </div>
                 </div>
                 <div class="instruments__item">
-                    <img class = "instruments__img" src="icons/skills/css3.svg" alt="CSS3">
+                    <img class="instruments__img" src="icons/skills/css3.svg" alt="CSS3">
                     <div class="instruments__title">CSS3</div>
-                    <div class="instruments__descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
+                    <div class="instruments__descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид
+                        вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
                 </div>
                 <div class="instruments__item">
-                    <img class = "instruments__img" src="icons/skills/js.svg" alt="Java Script">
+                    <img class="instruments__img" src="icons/skills/js.svg" alt="Java Script">
                     <div class="instruments__title">Java Script</div>
-                    <div class="instruments__descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+                    <div class="instruments__descr">Этот язык программирования позволяет оживить все что угодно:
+                        слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
                 </div>
                 <div class="instruments__item">
-                    <img class = "instruments__img" src="icons/skills/jquery.svg" alt="Jquery">
+                    <img class="instruments__img" src="icons/skills/jquery.svg" alt="Jquery">
                     <div class="instruments__title">Jquery</div>
-                    <div class="instruments__descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
+                    <div class="instruments__descr">Библиотека Jquery позволит ускорить разработку. Без необходимости
+                        интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
                 </div>
                 <div class="instruments__item">
-                    <img class = "instruments__img" src="icons/skills/react.svg" alt="React">
+                    <img class="instruments__img" src="icons/skills/react.svg" alt="React">
                     <div class="instruments__title">React</div>
-                    <div class="instruments__descr">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
+                    <div class="instruments__descr">Эта библиотека позволяет создавать web-приложения. Мы можем создать
+                        максимально интерактивный продукт именно под ваши цели</div>
                 </div>
                 <div class="instruments__item">
-                    <img class = "instruments__img" src="icons/skills/node.js.svg" alt="Node.js">
+                    <img class="instruments__img" src="icons/skills/node.js.svg" alt="Node.js">
                     <div class="instruments__title">Node.js</div>
-                    <div class="instruments__descr">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
+                    <div class="instruments__descr">Эта платформа позволяет создавать бэкенд для вашего продукта -
+                        “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
                 </div>
                 <div class="instruments__item">
-                    <img class = "instruments__img" src="icons/skills/mongo.db.svg" alt="Mongo.db">
+                    <img class="instruments__img" src="icons/skills/mongo.db.svg" alt="Mongo.db">
                     <div class="instruments__title">Mongo.db</div>
-                    <div class="instruments__descr">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
+                    <div class="instruments__descr">Это нереляционная база данных, которая будет хранить данные вашего
+                        сайта или приложения</div>
                 </div>
             </div>
         </div>
@@ -312,8 +342,8 @@
                 </div>
             </div>
         </div>
-    </section> 
-    
+    </section>
+
     <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fz16 portfolio__title">Портфолио</h2>
@@ -327,11 +357,13 @@
                 </a>
                 <a class="portfolio__item portfolio__image__food" href="https://sbilevich.github.io/food">
                 </a>
-                <a class="portfolio__item vertical portfolio__image__restore" href="https://sbilevich.github.io/restore">
+                <a class="portfolio__item vertical portfolio__image__restore"
+                    href="https://sbilevich.github.io/restore">
                 </a>
                 <a class="portfolio__item portfolio__image__task" href="https://sbilevich.github.io/todo">
                 </a>
-                <a class="portfolio__item horisontal portfolio__image__stocks" href="https://sbilevich.github.io/stocks">
+                <a class="portfolio__item horisontal portfolio__image__stocks"
+                    href="https://sbilevich.github.io/stocks">
                 </a>
             </div>
         </div>
@@ -348,21 +380,21 @@
                         <div class="price__elem">
                             <div class="price__name">Landing-page</div>
                             <div class="price__price">от 8000 руб.</div>
-                        </div>   
-                        <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>  
+                        </div>
+                        <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
                     </div>
                     <div class="price__item">
                         <div class="price__elem">
                             <div class="price__name">Корпоративный сайт</div>
                             <div class="price__price">от 20000 руб.</div>
-                        </div>    
-                        <div class="price__descr">Сайт для вашего бизнеса или компании</div>                      
+                        </div>
+                        <div class="price__descr">Сайт для вашего бизнеса или компании</div>
                     </div>
                     <div class="price__item">
                         <div class="price__elem">
                             <div class="price__name">Интернет-магазин</div>
                             <div class="price__price">от 30000 руб.</div>
-                        </div>    
+                        </div>
                         <div class="price__descr">Инструмент для ваших продаж в сети</div>
                     </div>
                 </div>
@@ -371,21 +403,21 @@
                         <div class="price__elem">
                             <div class="price__name">Web-приложение</div>
                             <div class="price__price">от 28000 руб.</div>
-                        </div>    
-                        <div class="price__descr">Приложение внутри браузера для лучшего комфорта</div>  
+                        </div>
+                        <div class="price__descr">Приложение внутри браузера для лучшего комфорта</div>
                     </div>
                     <div class="price__item">
                         <div class="price__elem">
                             <div class="price__name">Android/IOS Приложение</div>
                             <div class="price__price">от 25000 руб.</div>
-                        </div>    
+                        </div>
                         <div class="price__descr">Приложение для смартфона любой ОС</div>
                     </div>
                     <div class="price__item">
                         <div class="price__elem">
                             <div class="price__name">Дизайн</div>
                             <div class="price__price">Индивидуально</div>
-                        </div>    
+                        </div>
                         <div class="price__descr">Создам дизайн для вашего сайта/приложения...</div>
                     </div>
                 </div>
@@ -397,7 +429,7 @@
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <!-- <img src="img/main_photo_2.jpg" alt=""> -->
+                    <img src="img/moto.jpeg" alt="">
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title_fz16 contacts__title">Контакты</h2>
@@ -405,7 +437,7 @@
                     <div class="devider"></div>
                     <div class="title title_fz14 contacts__text">Любым удобным для вас способом:</div>
                     <div class="contacts__social">
-                        
+
                         <a href="#" class="contacts__link">
                             <img src="icons/social/Facebook_contacts.svg" alt="facebook">
                         </a>
@@ -419,19 +451,19 @@
                     <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input required name = "name" id = "name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input required name = "email" id = "email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div class = "contacts__triggers">
-                            <button class = "contacts__btn btn">Отправить сообщение</button>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn">Отправить сообщение</button>
                             <div class="contacts__policy">
                                 <input required type="checkbox">
                                 <span>Я согласен(а) с <a href="/src/policy.html">политикой конфиденциальности</a></span>
@@ -446,4 +478,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -4,6 +4,15 @@
     }
 }
 @media (max-width: 1200px) {
+    .promo {
+        &__opacity {
+            background-color: rgba($color: #fff, $alpha: 0.4);
+        }
+        &__wrapper {
+            background: url("/img/photo.jpeg") no-repeat right/80%;
+            background-color: #ae4f57;
+        }
+    }
     .container {
         max-width: 960px;
     }
@@ -14,7 +23,7 @@
         }
         &__skills {
             column-gap: 20px;
-            grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px);
+            grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
             &-item {
                 grid-template-columns: 40px 195px;
                 column-gap: 15px;
@@ -32,14 +41,13 @@
             grid-template-columns: repeat(auto-fit, 270px);
             justify-content: space-between;
         }
-        
     }
     .rating__elements {
         grid-template-columns: repeat(2, 350px);
         grid-auto-rows: minmax(70px, auto);
         justify-content: space-between;
         padding: 0 30px;
-        width: 100%
+        width: 100%;
     }
     .portfolio {
         &__wrapper {
@@ -47,7 +55,8 @@
             grid-auto-rows: 280px;
             justify-content: space-around;
             row-gap: 35px;
-            .horisontal, .vertical {
+            .horisontal,
+            .vertical {
                 grid-row: unset;
                 grid-column: unset;
             }
@@ -79,7 +88,7 @@
         }
         &__skills {
             grid-template-columns: 380px;
-            grid-auto-rows: minmax(115px,auto);
+            grid-auto-rows: minmax(115px, auto);
             &-item {
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
@@ -90,7 +99,7 @@
         padding-top: 85px;
         &__wrapper {
             column-gap: 60px;
-            grid-template-columns: repeat(auto-fit,320px);
+            grid-template-columns: repeat(auto-fit, 320px);
         }
     }
     .skills {
@@ -122,8 +131,8 @@
         &__name {
             &:before {
                 left: 5px;
-            }   
-        }     
+            }
+        }
     }
     .contacts {
         padding-top: 85px;
@@ -140,26 +149,29 @@
     }
 }
 
-
 @media (max-width: 768px) {
-    .container {
-        max-width: 540px;
-    }
-    .title {
-        &_fz48 {
-            font-size: 28px;
+    .promo__wrapper {
+        background: url(/img/photo.jpeg) no-repeat right/75%;
+        background-color: #ae4f57;
+        .container {
+            max-width: 540px;
         }
-    }
-    .promo {
-        &__title {
-            line-height: 39px;
-            width: 300px;
+        .title {
+            &_fz48 {
+                font-size: 28px;
+            }
+        }
+        .promo {
+            &__title {
+                line-height: 39px;
+                width: 300px;
+            }
         }
     }
     .about {
         padding-top: 40px;
         &__wrapper {
-            grid-template: 270px auto auto / 1fr;
+            grid-template-columns: 320px;
         }
         &__photo {
             display: none;
@@ -191,7 +203,8 @@
     .instruments {
         justify-content: center;
     }
-    .rating {padding-top: 50px;
+    .rating {
+        padding-top: 50px;
         &__elements {
             grid-template-columns: repeat(1, 320px);
             grid-auto-rows: minmax(70px, auto);
@@ -199,7 +212,7 @@
             margin-top: 40px;
         }
     }
-   
+
     .portfolio {
         padding-top: 60px;
     }
@@ -226,11 +239,9 @@
         }
     }
     .devider {
-
         margin: 0 auto;
     }
 }
-
 @media (max-width: 576px) {
     .container {
         width: 100%;
@@ -254,7 +265,9 @@
         }
     }
     .promo {
-        background: url('../img/main_bg1.jpg') no-repeat 57%/cover;
+        &__wrapper {
+            background: url(../img/photo1.jpeg) no-repeat right/cover;
+        }
         &__btns {
             margin-top: 30px;
         }
@@ -263,6 +276,9 @@
         // &__wrapper {
         //     grid-template: 340px auto auto / 1fr;
         // }
+        &__photo {
+            display: none;
+        }
         &__skills {
             grid-template-columns: 1fr;
         }
@@ -278,7 +294,7 @@
         }
     }
     .rating__elements {
-        grid-template-columns: repeat(1,300px);
+        grid-template-columns: repeat(1, 300px);
     }
     .price {
         &__wrapper {
@@ -287,9 +303,12 @@
     }
     .contacts {
         padding-bottom: 50px;
-         &__wrapper {
+        &__wrapper {
             grid-template-columns: (auto, 585px);
-         }
+        }
+        &__photo {
+            display: none;
+        }
         &__form {
             grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
         }

@@ -1,7 +1,9 @@
 .contacts {
     padding: 120px 0 90px 0;
     &__photo {
-        background: url('../img/main_photo_2.jpg')
+        img {
+            width: 100%;
+        }
     }
     &__wrapper {
         padding: 0 35px 0 52px;
@@ -76,7 +78,6 @@
             font-weight: 500;
             font-size: 12px;
         }
-
     }
     &__textarea {
         grid-column: 1 / 3;
